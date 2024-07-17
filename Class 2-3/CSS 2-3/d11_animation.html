@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 10;
+
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: anim1;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            /* animation-timing-function:ease-out; */
+            /* animation-iteration-count: infinite; */
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes anim1 {
+            /* 0%{
+               
+            }
+            50%{
+                width: 150px;
+                height: 150px;
+            }
+            100%{
+                transform: translateX(400px);
+                background: yellow;
+                border-radius: 50%;
+            } */
+
+            from{
+
+            }
+            to{
+                background: #000;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .banner{
+            width: 100%;
+            height: 400px;
+            border: 10px dotted yellow;
+            background: rgba(223, 151, 18,0.5);
+
+            /* 
+            Gradient Color
+            --------------
+            Linear
+            Radial
+            Conic
+            */
+
+            background:linear-gradient(to left,red, blue,orange) ;
+            /* 
+            to left
+            to right
+            to top
+            to bottom
+            to top left
+            to top right
+            to bottom left
+            to bottom right
+            
+            
+            */
+
+            background:url('https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') ;
+            background-repeat:no-repeat ;
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            background: linear-gradient(rgba(244, 7, 7, 0.5),rgba(26, 5, 255, 0.5)), url('https://images.pexels.com/photos/355508/pexels-photo-355508.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            background-size:cover;
+
+            /* radial gradient */
+            background: radial-gradient(circle at top , red,blue, yellow,green);
+
+            /* 
+            
+            */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="banner">
+        
+    </div>
+</body>
+</html>

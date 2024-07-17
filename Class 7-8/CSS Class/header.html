@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+
+    <!-- CDN link for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background: aqua;
+            width: 100%;
+        }
+        header .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+        }
+        header .navbar .logo a{
+            text-decoration: none;
+            color: white;
+            text-shadow: 0 0 5px black;
+        }
+
+        header .navbar nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        header .navbar ul a{
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: red;
+            font-weight: bold;
+        }
+        header .navbar .search{
+            display: flex;
+            align-items: center;
+            
+        }
+        header .navbar input{
+            border: none;
+            height: 30px;
+            border-radius: 20px;
+            margin-right: 5px;
+            padding: 10px;
+            background: #aba8a8;
+        }
+
+        header .navbar input:focus{
+            outline: none;
+            box-shadow: 0 0 5px rgb(236, 18, 18);
+        }
+        
+        header .navbar input::placeholder{
+            color: white;
+            font-style: italic;
+        }
+
+        header .navbar .search i{
+            background: rgba(91, 89, 89, 0.5);
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            transition: 1s;
+        }
+
+        header .navbar .search i:hover{
+            background: rgba(70, 69, 69, 0.8);
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+
+
+            <div class="logo">
+                <a href="#">
+                    <h1>Mylogo</h1>
+                </a>
+            </div>
+
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="search">
+                <input type="search" placeholder="Search...">
+                <i class='bx bx-search-alt'></i>
+            </div>
+
+        </div>
+    </header>
+    
+</body>
+</html>

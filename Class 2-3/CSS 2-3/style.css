@@ -1,0 +1,11 @@
+h1{
+    color: yellow;
+}
+
+h2,p{
+    background: #b52f2f;
+}
+
+p{
+    font-size: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background in CSS</title>
+    <!-- favicon -->
+     <link rel="shortcut icon" href="" type="image/x-icon">
+     <link rel="apple-touch-icon" href="">
+
+     <!-- internal css -->
+      <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .banner{
+            width: 100%;
+            height:60vh;
+            border: 10px solid red;
+            background:rgba(216, 216, 5, 0.5) ;
+            background:linear-gradient(red 50%,blue 70%,black) ;
+            background:linear-gradient(to right, red,blue,black) ;
+            /* 
+            to right
+            to left
+            to top
+            to bottom
+            to top left
+            to top right
+            to bottom left
+            to bottom right
+            
+            */
+            background:url('https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHx8fDE3MTkxNjI4NjZ8MA&ixlib=rb-4.0.3') ;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
+
+            background: linear-gradient(rgba(238, 2, 2, 0.5),rgba(5, 10, 249, 0.5)), url('https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixid=M3wxMjA3fDB8MXxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHx8fDE3MTkxNjI4NjZ8MA&ixlib=rb-4.0.3');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+        }
+      </style>
+
+</head>
+<body>
+<!-- 
+    types of gradient
+    --------------
+    1. Linear
+    2. Radial
+    3. Conic    
+-->
+    <div class="banner">
+       
+    </div>
+    
+</body>
+</html>

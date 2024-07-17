@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+
+    
+    <script>
+        // map,filter,reduce,reduceRight,
+        const number =[2,1,4,5,3,7,14,50]
+        document.write(number + "<br/>") 
+        // document.write(num.sort((a,b)=>a-b)+'<br>')
+
+        // const squareFunction=num=>num ** 2
+        // let square= number.map(squareFunction)
+        let square= number.map(num=>num**2)
+
+        document.write(square +'<br>')
+
+
+        // filter
+
+        let filtered = number.filter((num)=>{
+            return num < 20 && num >10
+        })
+        document.write(filtered + '<br>')
+
+
+        // reduce/right
+        let reduced = number.reduceRight((accumulator,currentvalue)=>{
+            console.log('Accumulator is '+ accumulator)
+            console.log('Currentvalue is '+ currentvalue)
+            return accumulator + currentvalue
+
+        })
+        document.write(reduced)
+
+        // every, some, find, include ,join 
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

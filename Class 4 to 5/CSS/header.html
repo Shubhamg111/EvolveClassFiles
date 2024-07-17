@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background: aqua;
+            padding: 0 10%;
+        }
+        header .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .navbar .logo{
+            width: 100px;
+            height: 60px;
+            background: rgba(210, 208, 208, 0.5);
+        }
+
+        header .navbar .logo img{
+            width: 100%;
+            height: 100%;
+        }
+
+        header .navbar nav ul{
+            list-style: none;
+            display: flex;
+            
+
+        }
+        header .navbar nav ul li{
+            margin: 10px;
+            font: 16px;
+            color: rgb(59, 57, 57);
+            font-weight: bold;
+        }
+        .search input{
+            border: none;
+            height: 30px;
+            border-radius: 10px;
+
+        }
+        .search button{
+            border: none;
+            padding: 8px ;
+            background: orange;
+            border-radius: 5px;
+            box-shadow: 0 0 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./image-removebg-preview.png" alt="">
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="Search..">
+                <button>Search</button>
+            </div>
+       
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

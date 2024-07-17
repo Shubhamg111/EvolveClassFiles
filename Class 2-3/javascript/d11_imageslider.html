@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            height: 400px;
+        }
+
+    </style>
+</head>
+<body bgcolor="">
+    
+    <img src="images/a.jpg" alt="" onmouseover="stopImg()" onmouseout="startImg()">
+    <button class="btn1" onclick="prev()">prev</button>
+    <button class="btn2" onclick="next()">next </button>
+
+    <input type="color" id="color" onchange="setColor()">
+    <script>
+        let images =  ['a.jpg', 'b.jpg','c.png', 'd.jpg'];
+        let imagelen = images.length
+        let i = 0
+        let set = setInterval(imgSlider,4000)
+
+        function imgSlider(){
+            i++
+            i = i % imagelen
+            
+            document.querySelector('img').src=`images/${images[i]}`
+        }
+        function stopImg(){
+            clearInterval(set)
+        }
+
+        function startImg(){
+            set = setInterval(imgSlider,4000)
+        }
+
+        function prev(){
+            i--
+            if(i<0){
+                i = imagelen-1
+            }
+            document.querySelector('img').src=`images/${images[i]}`
+        }
+
+        function next(){
+            i++
+            i = i%imagelen
+            document.querySelector('img').src=`images/${images[i]}`
+        }
+
+        
+
+        
+    </script>
+
+    <script>
+        const setColor=()=>{
+            let colorname=document.getElementById('color').value
+            // document.querySelector('body').setAttribute("bgcolor",`${colorname}`)
+            document.querySelector('body').style.background=`${colorname}`
+
+        }
+    </script>
+</body>
+</html>

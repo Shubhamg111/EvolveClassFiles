@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .banner {
+            background: rgba(20, 79, 146, 0.977);
+            padding: 10px 40px;
+            color: white;
+        }
+
+        .banner header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+        }
+
+        .banner header nav ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        .banner header ul li {
+            margin: 10px;
+        }
+
+        button {
+            background: rgb(9, 200, 225);
+            padding: 10px 15px;
+            border-radius: 20px;
+            border: none;
+            margin-right: 20px;
+        }
+        .banner .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 4%;
+            
+        }
+        .banner .container .text{
+            width: 550px;
+        }
+        .banner .container .text h2{
+            font-size: 40px;
+           
+        }
+        .banner .container .text p{
+            color: rgb(202, 195, 195);
+            line-height: 30px;
+        }
+        .btn{
+            display: flex;
+            margin-top: 20px;
+            align-items: center;
+        }
+        .banner .container .image{
+            width: 500px;
+            height: 500px;
+
+        }
+
+        .banner .container .image img{
+            width: 100%;
+            height: 100%;
+            animation:animate 2s infinite alternate ;
+        }
+        @keyframes animate{
+            from{}
+            to{
+                transform: translate(0, 20px);
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <header>
+            <h1>Arsha</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <button>Get Started</button>
+
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="container">
+            <div class="text">
+                <h2>Better Solutions For Your Business</h2>
+                <p>We are team of talented designers making websites with Bootstrap Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+
+                <div class="btn">
+                    <button>Get Started</button>
+                    <div class="watch">
+                        <i class="fa fa-play"></i>
+                        <span>Watch Video</span>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/hero-img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

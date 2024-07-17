@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+
+    <!-- internal css -->
+     <style>
+        /* universal selector / star selector */
+        *{
+            background: yellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+
+
+        /* element selector  */
+        h1{
+            background-color: aqua;
+            text-align: center;
+        }
+
+        /* id selector  */
+        #para{
+            font-size: 40px;
+            color: gold;
+        }
+
+        /* class selector  */
+        .cls{
+            color: chartreuse;
+            background-color: blue;
+        }
+
+        /* pseudo-class selector */
+        h1:hover{
+            color: crimson;
+            background: white;
+        }
+
+        #para:hover{
+            color: blue;
+            font-size: 30px;
+        }
+
+        .cls:hover{
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+     </style>
+</head>
+<body>
+
+    <!-- Element selector -->
+     <h1>This is element selector.</h1>
+
+     <!-- id selector  -->
+      <p id="para">This is id selector.</p>
+
+      <!-- class selector -->
+       <p class="cls home">This is class selector.</p>
+
+       
+    
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

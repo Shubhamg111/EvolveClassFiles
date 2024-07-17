@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" href="">
+
+    <!-- Internal Css  -->
+    <style>
+        /* Universal/star selector */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+            
+
+        /* Element selector */
+        h1{
+            font-size: 45px;
+            color: aqua;
+        }
+        h1:hover{
+            color: gold;
+        }
+
+        div{
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        /* class Selector  */
+        .head1{
+            /* border: 1px solid; */
+            /* border: 2px dotted red; */
+            color: red;
+        }
+        .head1:hover{
+            background: #000;
+        }
+        /* id selector  */
+        #head1{
+            font-size: 50px;
+            /* border: 10px ridge gold; */
+            /* width: 250px; */
+        }
+        /* Pseudo element selector*/
+        #head1::before{
+            content: "";
+            display: block;
+            width: 200px;
+            border: 2px solid;
+            margin-left: 100px;
+        
+        }
+        #head1::after{
+            content: "";
+            display: block;
+            width: 200px;
+            border: 2px solid;
+            margin-left: 100px;
+        
+        }
+
+
+
+    </style>
+    
+</head>
+<body>
+        <!-- selectors 
+        ------------
+    
+        element
+        id
+        class
+        universal/star  
+        pseudo class-->
+        <!-- priority == id > class > element -->
+
+        <div></div>
+            <h1 class="head1" id="head1">This is heading One.</h1>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        html{
+            font-size: 16px;
+            background: #d16666;
+        }
+        /* body{
+            font-size: 20px;
+        } */
+        .box{
+         height: 100px;
+         width: 50rem;
+         background: #000;
+        }
+
+        h1::after{
+            content: '';
+            display: block;
+            clear: both;
+            width: 300px;
+            height: 10px;
+            background: #0a22db;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <h1>HTML</h1>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Screen</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .mainbox{
+            width: 100%;
+            background: linear-gradient(to top left,red,blue);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        .mainbox .box{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background: orange;
+        }
+
+        @media screen and (max-width:879px){
+            .mainbox .box{
+                width: 45%;
+            }
+            
+        }
+
+        @media screen and (max-width:399px){
+            .mainbox .box{
+                width: 95%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    
+</body>
+</html>

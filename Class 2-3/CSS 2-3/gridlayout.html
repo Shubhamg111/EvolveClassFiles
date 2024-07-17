@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            gap: 10px;
+            
+           
+            
+        }
+        .container .box{
+            background: #000;
+        }
+        .container .box1{
+            background: #000;
+            grid-column: 1 / 4;
+            grid-row: 1 / 5;
+          
+           
+
+
+        }
+        .container .box2{
+            background: #d43232;
+            grid-column: 4/ 5;
+          
+        }
+        .container .box3{
+            background: #e0cf11;
+            grid-column: 2/5;
+            
+
+        }
+        .container .box4{
+            background: #ab6e6e;
+            grid-column: 1 / 3;
+            
+        }
+        .container .box5{
+            background: #d85f5f;
+            grid-column: 3 / 5;
+          
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">1</div> 
+        <div class="box box2">2</div> 
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    
+    </div>
+    
+</body>
+</html>

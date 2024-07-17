@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Animation </title>
+
+    <!-- Favicons -->
+     <link rel="shortcut icon" href="" type="image/x-icon">
+     <link rel="apple-touch-icon" href="">
+
+     <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            background: #000;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: anim1;
+            animation-duration: 5s;
+            /* animation-delay: 2s; */
+            animation-timing-function: ease-out;
+            animation-iteration-count: 2;
+            /* animation-direction: alternate-reverse; */
+            animation-fill-mode:backwards ;
+
+         
+        }
+
+        @keyframes anim1 {
+            /* from{}
+            to{
+                transform: translate(400px,400px);
+                background: green;
+                border-radius: 50%;
+            } */
+
+            0%{
+
+            }
+            50%{
+                transform: translate(400px,0px);
+                background: green;
+                border-radius: 50%;
+            }
+            100%{
+                transform: translate(800px,0px);
+                background: orange;
+                border-radius:0;
+            }
+        }
+        img{
+            animation: rotateball 5s infinite; 
+
+           
+        }
+        @keyframes rotateball {
+            0% {
+            }
+            20%{
+               transform: translate(100px,100px);
+            }
+            40%{
+                transform: translate(200px,200px);
+            }
+            60%{
+                transform:translate(200px,200px) rotate(180deg) ;
+                transition: 2s;
+            }
+            80%{
+                transform: translate(200px,200px);
+            }
+            100%{
+                transform: translate(100px,100px);
+            }
+            
+        }
+
+
+     </style>
+</head>
+<body>
+
+    <!-- <div class="box">
+       
+    </div> -->
+
+
+
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/013/362/736/small/football-soccer-transparent-free-png.png" alt="" width="200ps">
+
+
+
+
+
+</body>
+</html>

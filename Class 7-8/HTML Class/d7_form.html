@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./media/medium.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./media/medium.webp">
+</head>
+
+<body>
+    <h1>Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Form</legend>
+
+            <label for="fname">First Name : </label>
+            <input type="text" id="fname" placeholder="Enter your first name" required>
+            <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Enter your last name">
+            <br>
+            <hr>
+
+            <label for="email">Email Address: </label>
+            <input type="email" id="email" placeholder="Enter your Email">
+            <br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" min="2021-01-01" max="2030-12-30"><br>
+            <input type="datetime-local">
+
+            <hr>
+
+            <label for="pwd">Password :</label>
+            <input type="password" id="pwd" placeholder="Enter your passwprd">
+            <br>
+
+            <label for="file">Files : </label>
+            <input type="file">
+
+            <hr>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" value="Male" name="gender" checked>Male
+            <input type="radio" value="female" name="gender">female
+            <input type="radio" value="others" name="gender">Others
+
+            <hr>
+            <label>Subject: </label><br>
+            <input type="checkbox" value="Maths">Maths <br>
+            <input type="checkbox" value="Science">Science <br>
+            <input type="checkbox" value="Nepali">Nepali <br>
+
+            <hr>
+            <label>Country : </label>
+            <select>
+                <optgroup>Country</optgroup>    
+                <option value="">--:--</option>
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="China">China</option>
+
+
+            </select>
+            <br>
+
+            <input list="selection">
+            <datalist id="selection">
+                <option value="Nepal">
+                <option value="India">
+            </datalist>
+
+            <hr>
+
+            <label for="">Contact Number</label>
+            <input type="number">
+
+            <hr>
+            <label for="">Feedback</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <hr> <hr> <hr>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+            
+
+
+
+
+
+
+        </fieldset>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

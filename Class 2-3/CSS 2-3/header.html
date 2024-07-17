@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN Link for boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            width:100%;
+            height: 70px;
+            margin: auto;
+            background: rgb(9, 57, 121);
+            padding: 10px;
+        }
+        header .navbar{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .navbar .logo{
+           
+            width: 200px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            
+        }
+        header .navbar .logo nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        header .navbar .logo nav ul li{
+            margin: 10px;
+            padding: 10px;
+          
+        }
+        header .navbar .logo nav ul li a{
+            color: rgb(214, 207, 207);
+            text-decoration: none;
+            font-size: 18px;
+        }
+        header .navbar .icons{
+            display: flex;
+            align-items: center;
+            
+        }
+        header .navbar .icons button{
+            border: none;
+            background-color: orange;
+            padding: 10px 20px;
+            margin: 0 10px;
+            color: black;
+            border-radius: 5px;
+        }
+        header .navbar .icons i{
+            font-size: 40px;
+            color: rgb(217, 212, 212);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- start of header  -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./media/pexels-james-wheeler-414612.jpg" alt="Image" width="50px">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+
+
+
+
+            <div class="icons">
+                <button>Login</button>
+                <i class='bx bxs-cart-add'></i>
+
+            </div>
+            
+        </div>
+    </header>
+    <!-- end of header  -->
+    
+</body>
+</html>

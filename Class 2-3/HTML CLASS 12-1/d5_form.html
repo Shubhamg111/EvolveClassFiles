@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./media/images.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./media/images.jpg">
+</head>
+
+<body>
+    <!-- form- label, input(type,placeholder,required,name,id), button -->
+
+    <form>
+        <fieldset>
+            <legend>HTML Form</legend>
+            <label for="fname">First name:</label>
+            <input type="text" name="firstname" id="fname" placeholder="enter firstname" required> <br>
+            <label for="lname">Last Name : </label>
+            <input type="text" name="lastname" id="lname" placeholder="Enter last name">
+
+            <hr>
+            <label for="contact">Contact</label>
+            <input type="number" id="contact" placeholder="Contact Number"><br>
+            <hr>
+            <label for="email">Email ID :</label>
+            <input type="email" value="minamina@gmail.com" readonly>
+            <hr>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" name="" id=""><br>
+            <input type="datetime-local" name="" id="dob">
+            <hr>
+            <label>Gender:</label>
+            <input type="radio" value="male" name="gender">Male
+            <input type="radio" value="female" name="gender">Female
+            <input type="radio" value="others" name="gender">Others
+            <hr>
+            <label>Subjects:</label><br>
+            <input type="checkbox" name="" value="html5">HTML5 <br>
+            <input type="checkbox" name="" value="css3">CSS3 <br>
+            <input type="checkbox" name="" value="js">Javascript <br>
+            <input type="checkbox" name="" value="reactjs">Reactjs
+
+            <hr>
+            <input type="color">
+            <hr>
+            <label for="">Car</label>
+            <select name="" id="">
+                <option value="">---</option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+            </select>
+            <hr>
+
+
+            <label>Image :</label>
+            <input type="file">
+            <hr>
+            <label for="psw">Password:</label>
+            <input type="password" name="" id=" " placeholder="">
+
+            <hr>
+            <input type="range" name="" id="">
+            <hr>
+            <label for="">Message:</label><br>
+            <textarea name="" id="" cols="30" rows="20"></textarea>
+            <hr>
+            <input type="search">
+
+            <hr>
+            <hr>
+            <button>Submit</button>
+            <button>Reset</button>
+            <button disabled="disabled">Login</button>
+            <button type="button">Button</button>
+
+
+
+
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .container{
+            width: 90%;
+            height: 300px;
+            border: 20px solid red;
+            position: relative;
+            z-index: 1;
+        }
+        .container .box2{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            position: absolute;
+            right: 0;
+            /* top: 0; */
+            bottom: 0;
+            z-index:2;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            /* position: relative; */
+            position: absolute;
+            left: 300px;
+            top: 0;
+            z-index: 2;
+            /* right: 20px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <pre>
+        Position(top,left,bottm,right)
+        ----------------
+        static
+        relative
+        absoulte
+        fixed
+        sticky
+    </pre> -->
+
+    <div class="container">
+        <!-- <div class="box2"></div> -->
+    </div>
+
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex In css</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon"
+        href="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg"
+        type="image/x-icon">
+    <link rel="apple-touch-icon"
+        href="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-1080x675.jpg">
+        <style>
+            *{
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .mainbox{
+                width: 100%;
+                background: aqua;
+                padding: 1px;
+                display: flex;
+                justify-content: space-between;
+                /* center
+                flex-end
+                flex-start
+                space-between
+                spave-around
+                space-evenly
+                */
+                align-items: flex-end;
+                /* flex-start
+                center
+                flex-end
+                */
+            }
+            .mainbox .box{
+                width: 200px;
+                height: 200px;
+                background: yellow;
+                margin: 20px;
+            }
+        </style>
+</head>
+
+<body>
+
+    <div class="mainbox">
+        <!-- .box*4 -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <!-- <h1>heading</h1> -->
+        <div class="box">4</div>
+    </div>
+</body>
+
+</html>

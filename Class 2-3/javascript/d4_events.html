@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <pre>
+        onclick
+        ondblclick
+        onsubmit
+        onchange
+        onmouseover
+        onmouseout
+        onkeyup/onkeypress
+        onkeydown
+        onload
+    </pre>
+
+    <button onclick="showDate()">Show Date</button>
+    <h1 id="date"></h1>
+    <h1 id="dates"></h1>
+
+    <hr>
+    <select id="select" onchange="demo()">
+        <option value=""> </option>
+        <option value="html">Html</option>
+        <option value="css">css</option>
+        <option value="javascript">Javascript</option>
+
+    </select>
+    <h2>this is result</h2>
+
+
+
+    <script>
+        const showDate = () => {
+            // document.write(new Date())
+            // let date = new Date()
+            document.getElementById('date').innerHTML = `Today's Date is ${new Date().getMinutes()}`
+        }
+
+
+        const demo=()=>{
+            let optionvalue = document.querySelector('#select').value
+            document.querySelector('h2').innerHTML=`you choose ${optionvalue}`
+        }
+
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

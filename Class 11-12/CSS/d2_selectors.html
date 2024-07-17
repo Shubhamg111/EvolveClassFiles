@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <!-- internal css -->
+    <style>
+        /* universal selector */
+        *{
+          background: #3fde0a;
+          margin: 0;
+        }
+
+        
+        /* id selector */
+        #head{
+            color: red;
+            font-size: 30px;
+            
+        }
+        #head:hover{
+            font-size: 50px;
+        }
+
+        /* class selector */
+        .newclass{
+            color: blue;
+            font-size: 60px;
+        }
+        .newclass:hover{
+            background: #000;
+        }
+
+        /* element selector */
+        h3{
+            color: green;
+            font-size: 40px;
+        }
+
+        h3:hover{
+            color: gold;
+            font-style: italic;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <pre>
+        Types of Selectors
+        ---------------------------
+        id Selectors
+        class Selectors
+        element Selectors
+        universal Selectors
+        pseudo class Selectors
+    </pre> -->
+
+
+    <!-- id selector -->
+    <h1 id="head">Heading One</h1>
+
+    <!-- class Selector -->
+    <h2 class="newclass">Heading two </h2>
+
+    <!-- element selector -->
+    <h3>Heading three</h3>
+    
+</body>
+</html>

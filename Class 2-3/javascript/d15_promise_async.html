@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+
+<body>
+    <script>
+        let news = [
+            {
+                newsTitle: 'News 1',
+                newsContent: 'This is first news.'
+            },
+            {
+                newsTitle: 'News 2',
+                newsContent: 'This is Second news.'
+            }
+        ]
+        const demofunction = () => {
+            let result = ''
+            news.forEach((post) => {
+                result += `<li>${post.newsTitle}
+                    <ul>
+                        <li>${post.newsContent}</li>
+                        </ul>
+                    </li>`
+                // result = result + `<li>${post.newsTitle}</li>`
+            })
+            document.write(result)
+        }
+
+        const showNews = () => {
+            setTimeout(demofunction, 2000)
+        }
+
+
+
+
+        const addNews = (newsdata) => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    news.push(newsdata)
+                    let error = false
+                    if (!error) {
+                        resolve()
+                    }
+                    else {
+                        reject('Something went wrong')
+                    }
+                }, 3000)
+            })
+        }
+
+        // addNews( {
+        //         newsTitle: 'News 3',
+        //         newsContent: 'This is third news.'
+        //     })
+        //     .then(showNews)
+        //     .catch(err=>console.log(err))
+
+        const asyncawait = async () => {
+            await addNews({newsTitle: 'News 3',newsContent: 'This is third news.'})
+            showNews()
+        }
+
+        asyncawait()
+
+
+
+
+    </script>
+</body>
+
+</html>

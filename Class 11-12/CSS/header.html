@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./media/free-images.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./media/free-images.jpg">
+
+    <!-- css  -->
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            background: aqua;
+            padding: 0 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo{
+            width: 150px;
+            height: 80px;
+        }
+
+        header .logo img{
+            width: 100%;
+            height: 100%;
+        }
+
+        header .search{
+            width: 300px;
+            height: 40px;
+        }
+        header .search input{
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 0 0 7px black;
+            background: rgb(187, 190, 190);
+        }
+
+        /* header nav{
+             /* background: #ec5d5d; 
+        } */
+        header nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        header nav ul li{
+            background: green;
+            margin: 10px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 20px;
+            box-shadow:0 0 10px black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./media/image-removebg-preview (3).png" alt="">
+        </div>
+
+        <div class="search">
+            <input type="search" placeholder="Search...">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About</li>
+                <li>Contact</li>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

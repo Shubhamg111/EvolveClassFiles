@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 600px;
+            height: 300px;
+            background: orange;
+            position:relative;
+            left: 200px;
+            top: 200px;
+            
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            position: absolute;
+            right: -40px;
+            bottom: -50px;
+            z-index:-1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    position (parameters => left, right, top, bottom)
+    --------------
+    1. Static  ==> default position of any body
+    2. Relative  => take own reference to move
+    3. Absolute => take relative body reference to move
+    4. Fixed => fixed any content at any position
+    5. Sticky => it fixed any content when reaches defined position
+
+     -->
+
+     <div class="box">
+         <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

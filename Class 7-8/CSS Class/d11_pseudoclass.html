@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclass In CSS</title>
+
+    <style>
+        h1{
+            transition:3s ;
+        }
+        h1:hover{
+           color: blue; 
+           font-style: italic;
+        }
+
+        /* =================== */
+
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: blue;
+        }
+        a:active{
+            color: yellow;
+            
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        table thead tr:first-child{
+            background: #868484;
+        }
+
+        table tbody tr:nth-child(odd){
+            background: #f3ac66;
+        }
+
+        table tbody tr:nth-child(even){
+            background: #dadad9;
+        }
+
+        table tbody tr:last-child{
+            color: blue;
+        }
+
+        input:focus{
+            outline: none;
+            background: #978c8c;
+            box-shadow: 0 0 10px black;
+        }
+
+        h1::after{
+            content:'' ;
+            clear: both;
+            display: block;
+            width: 100px;
+            height: 2px;
+            background: #0303f4;
+            margin:0 20px ;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Introduction</h1>
+
+
+
+
+
+
+
+    <input type="text">
+
+
+    <a href="#">Click Me</a>
+
+    <table border="" width="50%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>London</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>London</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

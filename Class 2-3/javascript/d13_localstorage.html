@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <button onclick="remove()">Remove</button>
+    <script>
+        localStorage.setItem('data','this is my data')
+        console.log(localStorage.getItem('data'))
+
+        const student={
+            name:'John Doe',
+            age:25,
+            city:"New York",
+            subject:['Math', 'Science']
+
+        }
+        let obj_to_str = JSON.stringify(student)
+        localStorage.setItem('student_details',obj_to_str)
+        console.log(localStorage.getItem('student_details'))
+        console.log(obj_to_str.name)
+
+        let str_to_obj = JSON.parse(obj_to_str)
+        console.log(str_to_obj.subject[1])
+
+        // json ==> Javascript Object Notation
+        const students={
+            'name':'John Doe',
+            'age':25,
+            'city':"New York",
+            'subject':['Math', 'Science']
+
+        }
+
+        const remove=()=>{
+            localStorage.clear()
+        }
+
+
+    </script>
+    
+</body>
+</html>

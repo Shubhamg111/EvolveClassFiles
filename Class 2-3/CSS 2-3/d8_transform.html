@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform IN css</title>
+    <style>
+        .container{
+            background: orange;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            /* padding: 10% 35%; */
+        }
+        /* .container img{
+            
+            /* transform:scale(1.5) ;
+            transform:scaleX(1.5) ;
+            transform:scaleY(1.5) ;
+            transform:scale(1.5,-0.5); */
+
+            /* transform: translate(200px);
+            transform: translateY(200px);
+            transform: translate(200px ,-10px); */
+
+             /* transform: skew(40deg); */
+            /*transform: skewX(89deg);
+            transform: skewY(80deg);
+            transform: skew(80deg, -20deg); */
+
+            /* transform: rotate(20deg);
+            transform: rotateZ(360deg);
+            
+
+            transform: scale() rotate()  ;
+ 
+ 
+        } */
+
+        
+        .container img:hover{
+            transform:skew(90deg);
+            transition: all 2s;
+           
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <pre>
+         Transform
+        --------------------
+        scale ==> change in size  
+        value == >1 // <1
+        translate ==> change in position
+        value = px // %
+        skew ==> change in orientation
+        value = degree (deg)
+        rotate ==> change in angle -->
+        <!-- value= degree(deg) 
+    </pre> -->
+    <div class="container">
+        <img src="./media/pexels-james-wheeler-414612.jpg" alt="image" width="100px">
+    </div>
+</body>
+</html>

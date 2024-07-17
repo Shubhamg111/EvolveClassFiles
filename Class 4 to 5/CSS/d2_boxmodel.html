@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <!-- internal css  -->
+     <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            /* margin: auto; */
+            /* margin: 100px 30px 100px 50px; */
+            padding: 10px;
+  
+           
+        }
+        p{
+            background: red;
+            
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: aqua;
+            margin: -70px 0 0 0;
+            
+          
+        }
+     </style>
+</head>
+<body>
+
+        <!-- 
+        Short hand property of Margin
+        --------------------------------
+        margin : top  right  bottom  left;
+        margin : top  left&right  bottom;
+        margin : top&bottom  left&right;
+        margin : allside ;
+        margin : auto; ==> align the content to center horizontally
+        margin accepts negative value also.
+        -->
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quos quas officiis tempore repellat molestiae laboriosam, nihil rem tempora nulla a quam sequi est. Quidem quisquam ea corporis a tenetur.</p>
+    </div>
+    <div class="box2"></div>
+    
+</body>
+</html>

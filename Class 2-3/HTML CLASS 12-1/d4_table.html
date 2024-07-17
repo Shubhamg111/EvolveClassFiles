@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="./media/images.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./media/images.jpg">
+    <!-- cdn link for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <H1>Table In HTML</H1>
+    <table border width="100%">
+        <caption>Employee Details Table</caption>
+        <thead>
+            <tr>
+                <th colspan="2" >Name</th>
+                <th rowspan="2">Age</th>
+                <th colspan="2">Address</th>
+                <th rowspan="2">Action</th>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Permanent Address</th>
+                <th>Temporary Address</th>
+            </tr>
+        </thead>
+        <tbody  align="center">
+            <tr>
+                <td>John</td>
+                <td>DOE</td>
+                <td>35</td>
+                <td>USA</td>  
+                <td>USA</td>  
+                <td>
+                    <a href="#"><i class='bx bx-trash' ></i></a>
+                    <a href="#"><i class='bx bxs-edit' ></i></a>
+                
+                </td>        
+            </tr>
+            <tr>
+                <td>Yoyal</td>
+                <td>Karki</td>
+                <td>23</td>
+                <td>Nepal</td>
+                <td>Nepal</td>
+
+                <td><a href="#">Edit</a> </td>
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>

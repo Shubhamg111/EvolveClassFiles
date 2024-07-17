@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <!-- internal css -->
+     <style>
+        /* universal selector */
+        *{
+            background:url(https://img.freepik.com/free-photo/colorful-design-with-spiral-design_188544-9588.jpg);
+            background-size:cover ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        /* element selector */
+        h1{
+            font-size: 90px;
+        }
+
+        /* id selector */
+        #idname{
+            background-color: blue;
+        }
+
+        /* class selector */
+        .cname{
+            text-align: center;
+        }
+
+        /* id > class > element */
+
+        /* pseudoclass selector */
+        h1:hover{
+            color: red;
+        }
+
+        #idname:hover{
+            background-color: yellow;
+        }
+     </style>
+</head>
+<body>
+
+    <!-- element selector -->
+    <h1>Element Selector</h1>
+
+    <!-- id selector -->
+     <h2 id="idname">Id selector</h2>
+
+     <!-- class selector -->
+      <h3 class="cname dname" >Class Selector</h3>
+
+    
+</body>
+</html>

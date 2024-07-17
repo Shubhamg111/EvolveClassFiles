@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mystore</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/b1.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/b1.jpg">
+
+    <!-- CDN link for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CDN link for icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- start of header -->
+    <header class="bg-info">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html" class="text-warning"><h1>Mystore</h1></a>
+            </div>
+
+            <nav>
+                <ul class="nav">
+                    <a href="#" class="nav-link text-white fw-bold"><li>Home</li></a>
+                    <a href="#" class="nav-link text-white fw-bold"><li>About</li></a>
+                    <a href="#" class="nav-link text-white fw-bold"><li>Services</li></a>
+                    <a href="#" class="nav-link text-white fw-bold"><li>Contact</li></a>
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="container d-flex justify-content-between align-items-center py-1">
+
+            <div class="search d-flex">
+                <input type="search" class="form-control bg-secondary-subtle me-2" placeholder="Search...">
+                <i class="bi bi-search fs-3 text-white"></i>
+            </div>
+
+            <div class="icons">
+                <button class="btn btn-danger">Sign Up</button>
+                <button class="btn btn-outline-warning">Login</button>
+
+            </div>
+        </div>
+
+    </header>
+    <!-- end of header -->
+
+
+
+
+    <!-- start of main section -->
+    <main>
+        <!-- start of banner  -->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/b1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/b2.avif" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/b3.avif" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- end of banner  -->
+
+        <!-- start of products -->
+        <div class="container py-5">
+            <h2 class="text-success text-center">Products</h2>
+            <hr class="container">
+
+            <div class="card-group">
+                <div class="card m-3 rounded shadow">
+                  <img src="./images/p1.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">DSLR Camera</h5>
+                    <div class="btn d-flex justify-content-between">
+                        <button class="btn btn-success"><i class="bi bi-eye"></i> View Details</button>
+                        <button class="btn btn-warning"> <i class="bi bi-cart-plus-fill"></i> Add to Cart</button>
+
+                    </div>
+                    
+
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+
+                <div class="card m-3 rounded shadow">
+                    <img src="./images/p2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">High Bass Speaker</h5>
+                      <div class="btn d-flex justify-content-between">
+                          <button class="btn btn-success">View Details</button>
+                          <button class="btn btn-warning">Add to Cart</button>
+  
+                      </div>
+                      
+  
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+
+                  <div class="card m-3 rounded shadow">
+                    <img src="./images/p3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Compact Powder</h5>
+                      <div class="btn d-flex justify-content-between">
+                          <button class="btn btn-success">View Details</button>
+                          <button class="btn btn-warning">Add to Cart</button>
+  
+                      </div>
+                      
+  
+                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                
+              </div>
+
+              <hr class="container"> 
+
+            <div class="see">
+                <h5 class="text-end text-danger"><i class="bi bi-plus-circle-fill"></i> See More</h5>
+            </div>
+        </div>
+        <!-- end of products  -->
+
+        <!-- start of accordion -->
+      
+        <div class="container-fluid bg-secondary-subtle px-5 py-3">
+          <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-between px-4">
+              <div class="accordion col-md-6" id="accordionExample">
+                <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, porro dolor voluptate est quia inventore?.</p>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="image">
+                <img src="./images/image-removebg-preview (4).png" alt="">
+              </div>
+
+            </div>
+          </div>
+        </div>
+     
+
+        <!-- end of accordion -->
+
+    </main>
+    <!-- end of main section -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- start of footer -->
+    <footer></footer>
+    <!-- end of footer -->
+
+
+
+
+
+    <!-- CDN Js for bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

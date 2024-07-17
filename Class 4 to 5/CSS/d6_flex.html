@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex in CSS</title>
+
+    <!-- favicon -->
+
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .mainbox{
+            width: 100%;
+            background: aqua;
+            padding: 1px;
+            display: flex;
+            justify-content:center;
+            align-items: flex-end;
+            flex-direction:row;
+            /* float: right; */
+            flex-wrap: wrap-reverse;
+        }
+        .mainbox .box{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            margin: 10px;
+        }
+        .box2{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="box">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    
+</body>
+</html>

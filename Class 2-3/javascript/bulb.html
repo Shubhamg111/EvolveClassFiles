@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="">
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs72BNx4LRuHpwGDRqWh3tLKE9-gGB1QfENoChFLH9ZA&s" alt="" width="400px" height="400px">
+
+        <button  onclick="on()" id="on">Switch On</button>
+        <button onclick="off()">Switch Off</button>
+
+        <script>
+            // document.getElementById('on').addEventListener('click',on()
+            const on=()=>{
+                // document.querySelector('img').src='https://www.freeiconspng.com/thumbs/bulb/clip-art-yellow-light-bulb-png-8.png'
+                document.querySelector('#image').setAttribute('src','https://www.freeiconspng.com/thumbs/bulb/clip-art-yellow-light-bulb-png-8.png')
+            }
+
+            const off=()=>{
+                // document.querySelector('img').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs72BNx4LRuHpwGDRqWh3tLKE9-gGB1QfENoChFLH9ZA&s'
+                document.querySelector('img').removeAttribute()
+
+            }
+
+
+        </script>
+</body>
+</html>

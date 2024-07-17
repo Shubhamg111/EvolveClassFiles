@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+
+<body>
+    <script>
+        let news = [
+            {
+                newsTitle: 'News 1',
+                newsContent: 'This is first news.'
+            },
+            {
+                newsTitle: 'News 2',
+                newsContent: 'This is Second news.'
+            }
+        ]
+        const demofunction=()=>{
+            let result = ''
+            news.forEach((post)=>{
+                result += `<li>${post.newsTitle}</li>`
+                // result = result + `<li>${post.newsTitle}</li>`
+            })
+            document.write(result)
+        }
+
+        const showNews=()=>{
+            setTimeout(demofunction,2000)
+        }
+        // showNews()
+
+        const addNews=(newsData,callBackFunction)=>{
+            setTimeout(()=>{
+                news.push(newsData)
+                callBackFunction()
+            },3000)
+
+        }
+
+        addNews({newsTitle: 'News 3',newsContent: 'This is Third news.'},showNews)
+    </script>
+</body>
+
+</html>

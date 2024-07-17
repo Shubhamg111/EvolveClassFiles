@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <input type="text" id="input" class="input" onkeydown="show()">
+    <h1></h1>
+
+    <script>
+        const show=()=>{
+            let input=document.getElementsByClassName('input').value
+            document.querySelector('h1').innerHTML=`${input}`
+
+            // toUpperCase()
+
+        }
+    </script>
+</body>
+</html>

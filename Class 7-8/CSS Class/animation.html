@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background: purple;
+            animation:animate 1s infinite alternate ;
+        }
+
+        @keyframes animate {
+            /* from{}
+            to{
+                margin: 200px;
+                border-radius: 50%;
+            } */
+
+            0%{
+
+            }
+
+            40%{
+                margin: 100px;
+                background: yellow;
+            }
+            80%{
+                margin: 100px 200px;
+                background: greenyellow;
+            }
+
+            100%{
+                margin: 200px 200px;
+                background: purple;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            margin: 3% auto;
+            box-shadow: 0 0 10px;
+            transition: 3s;
+            overflow: hidden;
+            /* transform:translate(0, 200px) ;
+            
+
+            transform: scale(1, 1.2);
+
+
+            transform: rotate(-60deg);
+
+            transform:skew(30deg,-9deg) ;
+            transform: translate(200px) rotate(40deg) scale(1.2) skew(30deg); */
+
+        }
+        p{
+            transition: 3s;
+        }
+        .box:hover p{
+            transform: translate(300px);
+            transform: scale(2);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+    Transformation
+    ----------------
+    1. translate ==> change in position (px, %)
+    2. scale ==> change in size (>1 = zoom out and <1 = zoom in)
+    3. rotate ==> change in orientation (deg = degree)
+    4. skew ==>  change in angle (deg = degree)
+    -->  
+    
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, doloribus alias id reiciendis ut nobis dignissimos, optio architecto autem dolorum iste. Sequi maxime deserunt incidunt sed consequuntur corporis itaque veniam.
+        </p>
+      
+    </div>
+</body>
+</html>
